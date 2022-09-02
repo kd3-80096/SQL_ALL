@@ -1,0 +1,3 @@
+select * from employees where HIRE_DATE > '17-FEB-04'    ## surround the 17-FEB-04 with colon since it is a text
+
+select * from employees where PHONE_NUMBER like '650%'  ## Here all the records of numbers are displayed whos number starts from 650
