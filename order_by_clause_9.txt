@@ -1,0 +1,10 @@
+
+select * from employees order by FIRST_NAME asc
+
+select * from employees order by FIRST_NAME
+
+select * from employees order by FIRST_NAME asc, salary asc
+
+select * from employees order by LAST_NAME asc, job_id desc
+
+select FIRST_NAME,HIRE_DATE from employees order by HIRE_DATE desc
