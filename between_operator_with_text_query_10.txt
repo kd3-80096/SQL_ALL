@@ -1,0 +1,5 @@
+select * from employees where first_name between 'Alexander' and 'Guy'
+
+select * from employees where FIRST_NAME between 'Bruce' and 'kevin' order by FIRST_NAME 
+
+select * from employees where first_name not between 'Alexander' and 'Guy' order by first_name
