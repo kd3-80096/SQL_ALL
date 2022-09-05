@@ -1,0 +1,4 @@
+select * from employees where job_id in ('SH_CLERK','AD_ASST','MK_MAN')
+select * from employees where job_id in ('SH_CLERK','AD_ASST','MK_MAN') order by FIRST_NAME
+
+select * from employees where DEPARTMENT_ID in (70,90,100)
