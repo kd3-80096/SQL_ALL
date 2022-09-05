@@ -1,0 +1,9 @@
+select * from employees where FIRST_NAME like '%a'
+select * from employees where FIRST_NAME like 'd%'
+select * from employees where PHONE_NUMBER like '6%3'
+select * from employees where LAST_NAME like "gr%"
+select * from employees where FIRST_NAME like "%do%"
+select * from employees where FIRST_NAME like "_ich_el"
+select * from employees where JOB_ID like "m__man"
+select * from employees where EMAIL like "_hu%"
+select * from employees where email like "_gi%z"
