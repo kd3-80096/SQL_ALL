@@ -1,0 +1,5 @@
+select lower('DEVESH')
+
+select lower(FIRST_NAME) from employees
+
+select lower(email) as mail, lower(job_id) as id from employees
