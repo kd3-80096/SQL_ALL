@@ -1,3 +1,0 @@
-select * from employees where HIRE_DATE between '17-FEB-04' and '20-JAN-08'
-
-select * from employees where HIRE_DATE not between '17-FEB-04' and '20-JAN-08'
