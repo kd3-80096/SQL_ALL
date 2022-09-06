@@ -1,0 +1,3 @@
+select upper('devesh')
+select upper(FIRST_NAME) from employees
+select upper(FIRST_NAME) as First, upper(LAST_NAME) as Last from employees
