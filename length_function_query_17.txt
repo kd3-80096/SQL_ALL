@@ -1,0 +1,4 @@
+select length('devesh')
+select length('devesh') as Devesh
+select length(FIRST_NAME) as First from employees
+select EMAIL,length(email) as mail from employees
