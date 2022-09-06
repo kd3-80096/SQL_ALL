@@ -1,0 +1,6 @@
+select * from employees limit 3
+
+select * from employees where DEPARTMENT_ID = 10 limit 5
+
+select * from employees limit 2,8  # after first 2 records we need to display 8 records
+
