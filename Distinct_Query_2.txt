@@ -1,0 +1,5 @@
+select distinct JOB_ID from employees    ## Retriving all the unique job_id 
+
+select distinct JOB_ID,SALARY from employees  ## Retriving unique values from multiple columns
+
+
