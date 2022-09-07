@@ -1,0 +1,114 @@
+select * from employees where job_id = 'SH_CLERK' and salary < 3000;
+
+select  * from employees where  PHONE_NUMBER like '6%' and MANAGER_ID = '100';
+
+select * from employees where HIRE_DATE > '10-APR-05' and salary > 5000 and MANAGER_ID != 100
+
+
+select * from employees where job_id = 'SH_CLERK' or salary < 3000;
+
+select  * from employees where  PHONE_NUMBER like '6%' or MANAGER_ID = '100';
+
+select * from employees where HIRE_DATE > '10-APR-05' or salary > 5000 or MANAGER_ID != 100;
+
+
+
+select * from employees where PHONE_NUMBER not like '6%'
+
+select  * from employees where  MANAGER_ID not in ('101','100')
+
+select * from employees where not job_id  = 'SH_CLERK' and salary > 5000
+
+
+
+
+
+select * from employees where HIRE_DATE between '17-FEB-04' and '20-JAN-08'
+
+select * from employees where HIRE_DATE not between '17-FEB-04' and '20-JAN-08'
+
+
+
+
+select * from employees order by FIRST_NAME asc
+
+select * from employees order by FIRST_NAME
+
+select * from employees order by FIRST_NAME asc, salary asc
+
+select * from employees order by LAST_NAME asc, job_id desc
+
+select FIRST_NAME,HIRE_DATE from employees order by HIRE_DATE desc
+
+
+
+datascientistselect * from employees where first_name between 'Alexander' and 'Guy'
+
+select * from employees where FIRST_NAME between 'Bruce' and 'kevin' order by FIRST_NAME 
+
+select * from employees where first_name not between 'Alexander' and 'Guy' order by first_name
+
+
+
+select * from employees where job_id in ('SH_CLERK','AD_ASST','MK_MAN') order by FIRST_NAME
+
+select * from employees where DEPARTMENT_ID in (70,90,100)
+
+select * from employees where FIRST_NAME like '%a'
+
+select * from employees where FIRST_NAME like 'd%'
+
+select * from employees where PHONE_NUMBER like '6%3'
+
+select * from employees where LAST_NAME like "gr%"
+
+select * from employees where FIRST_NAME like "%do%"
+
+select * from employees where FIRST_NAME like "_ich_el"
+
+select * from employees where EMAIL like "_hu%"
+
+select * from employees where email like "_gi%z"
+
+select  PHONE_NUMBER as mobile_no from employees
+
+select EMPLOYEE_ID AS [ID],EMAIL AS [e-mail] from employeesemployees
+
+
+select * from employees limit 3
+
+select * from employees where DEPARTMENT_ID = 10 limit 5
+
+select * from employees limit 2,8  # after first 2 records we need to display 8 records
+
+select upper('devesh')
+
+select upper(FIRST_NAME) from employees
+
+select upper(FIRST_NAME) as First, upper(LAST_NAME) as Last from employees
+
+
+select lower('DEVESH')
+
+select lower(FIRST_NAME) from employees
+
+select lower(email) as mail, lower(job_id) as id from employees
+
+select length('devesh')
+
+select length('devesh') as Devesh
+
+select length(FIRST_NAME) as First from employees
+
+
+select EMAIL,length(email) as mail from employees
+
+select instr('Devesh shivam','e')
+
+select FIRST_NAME,instr(FIRST_NAME,'c') from employees
+
+select FIRST_NAME,instr(FIRST_NAME,'do') from employees
+
+select substr('Devesh',2,4) ## from 2nd position and 4 characters
+
+select substr('Devesh Patil',-7,4) ## from -6 position from reverse to +4 position forward
