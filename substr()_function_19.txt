@@ -1,0 +1,7 @@
+select substr('Devesh',2,4) ## from 2nd position and 4 characters
+
+select substr('Devesh Patil',-7,4)   ## from -6 position from reverse to +4 position forward.
+
+select  EMAIL, substr(EMAIL,2,5) from employees
+
+select PHONE_NUMBER, substr(PHONE_NUMBER,3,7) as position from employees
