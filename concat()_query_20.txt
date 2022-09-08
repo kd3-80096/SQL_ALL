@@ -1,0 +1,10 @@
+
+select concat('Devesh','Patil')
+
+select concat('Devesh',' ','is',' ','Data-Scientist') as Display
+
+select concat(FIRST_NAME,' ',LAST_NAME) as Full_Name from employees
+
+select FIRST_NAME,LAST_NAME, concat(FIRST_NAME,' ',LAST_NAME) as Full_Name from employees
+
+select concat("My Full Name is ",FIRST_NAME,' ',LAST_NAME) as Full_Name from employees
