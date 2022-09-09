@@ -1,0 +1,7 @@
+select '  Devesh '
+
+select length('  Devesh ')
+
+select length(trim('  Devesh '))
+
+Select trim(ColumnName) from TableName;
