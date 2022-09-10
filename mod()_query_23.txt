@@ -1,0 +1,5 @@
+select mod(9,3)
+
+select mod(10,3)
+
+select salary,mod(salary,3) from employees.
