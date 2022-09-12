@@ -1,0 +1,10 @@
+
+select truncate(127.8957,0) ## after zero no number will be considered
+
+select truncate (18365.83692,2) 
+
+select truncate (18365.83692,8) 
+
+select truncate(345.3576,-2) ## after 3 we will get two zeros
+
+select PHONE_NUMBER,truncate(PHONE_NUMBER,2) from employees
