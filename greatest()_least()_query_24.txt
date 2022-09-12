@@ -1,0 +1,7 @@
+select greatest(2,56,87,90,43)
+
+select least(2,56,87,90,43)
+
+select greatest('Devesh','Shivam','Monu') as Names
+
+select least('Devesh','Shivam','Monu') as Names
