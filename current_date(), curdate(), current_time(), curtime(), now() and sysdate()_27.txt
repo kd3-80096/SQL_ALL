@@ -1,0 +1,11 @@
+Select current_date()
+
+Select curdate()
+
+Select current_time()
+
+Select curtime()
+
+select now()
+
+select sysdate()
