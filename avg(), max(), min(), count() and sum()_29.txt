@@ -1,0 +1,11 @@
+select min(SALARY) from employees
+
+select max(SALARY) from employees
+
+select avg(SALARY) from employees
+
+select sum(SALARY) from employees
+
+select count(SALARY) from employees
+
+select count(*) from employees  ## same as above
