@@ -1,0 +1,13 @@
+select year('2022-03-20')
+
+select month('2022-03-30')
+
+select day('2022-03-30')
+
+select monthname('2022-03-30')
+
+select dayname('2022-03-30')
+
+select * from employees where monthname(HIRE_DATE) ='JUN'
+
+select * from employees where year(HIRE_DATE) = 2003
