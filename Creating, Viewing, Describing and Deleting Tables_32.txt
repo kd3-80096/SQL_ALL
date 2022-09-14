@@ -1,0 +1,9 @@
+create table bike(buying varchar(10),class varchar(10),safety varchar(10),persons varchar(10))
+
+select * from bike
+
+describe bike ## details of table fields
+
+create table motorcycle as select buying,class,safety from bike    ##creating table from the bike table
+
+select * from bike 
