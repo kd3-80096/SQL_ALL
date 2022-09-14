@@ -1,0 +1,15 @@
+show databases
+
+create database Test
+
+drop database Test
+
+create database QAfox
+
+drop database QAfox
+
+use cardataset  ## To access tables from cardataset
+
+select * from car
+
+
