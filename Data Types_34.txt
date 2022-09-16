@@ -1,0 +1,61 @@
+
+create table xyz(a int)  ## datatype of column is integer
+
+insert into xyz values(9)
+
+select * from xyz
+
+insert into xyz values('dev')  ## cannot insert into strings into int datatype column
+
+insert into xyz values(1.5)  ## it will round off to upper bound
+
+insert into xyz(a) values (1.4) ## it will round off to lower bound
+
+select * from xyz 
+
+alter table xyz add b double  ## datatype of column b is double
+
+insert into xyz(b) values (1.5)  ## for float values
+
+alter table xyz add (c boolean)  ## datatype of column c is boolean
+
+
+
+insert into xyz(c) values (True)
+
+insert into xyz(c) values (False)  ## 0 is considered as false
+
+insert into xyz(c) values (10)   ## non-zero is considered as true
+
+alter table xyz add (d varchar(10))  ## Datatype is varchar 
+
+
+select * from xyz
+
+insert into xyz(d) values (10)
+
+insert into xyz(d) values ('Dev')
+
+alter table xyz add (e date)  ##datatye is date
+
+insert into xyz(e) values ('1996-12-06')
+
+
+alter table xyz add (f time)  ##datatye is time
+
+insert into xyz(f) values ('12:11:10')
+
+
+select * from xyz
+
+alter table xyz add (g datetime)  ##datatye is datetime
+
+insert into xyz(g) values ('1996-12-06 12:11:10')
+
+alter table xyz add (h year)  ##datatye is datetime
+
+insert into xyz(h) values ('1996')
+
+
+
+
