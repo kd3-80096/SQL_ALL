@@ -1,0 +1,5 @@
+select * from bike
+
+update bike set persons =4 where buying ='bike'
+
+update bike set  persons = 2 where buying = 'bike' and safety = 'N'
