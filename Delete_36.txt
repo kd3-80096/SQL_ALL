@@ -1,0 +1,7 @@
+delete from xyz where a = 9
+
+delete from xyz where  g = '12:11:10'
+
+delete from xyz where a is null  ## deleting the null values from column
+
+select * from xyz
