@@ -1,0 +1,10 @@
+
+select * from xyz
+
+select a from xyz where a is null
+
+select a from xyz where a is not null
+
+
+
+
