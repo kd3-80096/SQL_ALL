@@ -1,0 +1,4 @@
+
+rename table xyz to xyz1  ## renaming the table name
+
+rename table xyz1 to xyz  ## rename is statement and to is keyword
