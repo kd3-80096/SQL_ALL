@@ -1,0 +1,10 @@
+select * from bike
+
+alter table bike add price varchar(15)  ## adding column to the table
+
+alter table bike modify price int(15)    ## we modifid the column datatype
+
+alter table bike rename column price to MRP  ## here we modified the column name
+
+alter table bike drop column MRP   ## Here we deleted the column itself
+
