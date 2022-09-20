@@ -12,4 +12,10 @@ set autocommit =1  ## We set the autocommit to ON
 
 insert into bike values('bicycle',1,'Y',1)   ## This will permanantely be stored into the record as autocommit is on
 
+set autocommit = 0  ## We set the autocommit to off
+
+insert into bike values('tricycle',1,'Y',1) 
+
+commit  ## commit will help to manually do the changes even if the autocommit is set to off
+
 
