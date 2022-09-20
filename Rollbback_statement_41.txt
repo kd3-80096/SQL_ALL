@@ -1,0 +1,12 @@
+select * from bike
+
+set autocommit = 0
+
+delete from bike  ## Temporary deleted the records
+
+rollback   ## It will revert the temporary changes
+
+select * from bike
+
+
+
