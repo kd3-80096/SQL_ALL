@@ -1,0 +1,15 @@
+select * from bike
+
+insert into bike values('scooty',2,'N',2)
+
+set autocommit = 0  ## We set the autocommit to off
+
+insert into bike values('scooty',1,'Y',1)  ## This will be temporary included into the table
+
+select * from bike
+
+set autocommit =1  ## We set the autocommit to ON
+
+insert into bike values('bicycle',1,'Y',1)   ## This will permanantely be stored into the record as autocommit is on
+
+
