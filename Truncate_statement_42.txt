@@ -1,0 +1,18 @@
+select * from abc
+
+set autocommit = 0
+
+delete from abc  ## Temporary deleting the records
+
+rollback  ## It will revert the temporary changes
+
+truncate table abc ## It will permanantely delete the records even if the autocommit is 0
+
+rollback  ## It will not revert the permanant changes
+
+select * from abc
+
+
+
+
+
