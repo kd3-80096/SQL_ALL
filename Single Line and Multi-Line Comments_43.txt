@@ -1,0 +1,7 @@
+-- The below SQL statement is used for selecting the Database for further operations
+
+/* The below SQL statements are used for finding the list of tables in the above selected
+database and to retrieve the records from the specified table */
+
+-- show tables
+
