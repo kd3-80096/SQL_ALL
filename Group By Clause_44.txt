@@ -1,0 +1,6 @@
+select * from employees 
+
+select count(MANAGER_ID),JOB_ID from employees group by JOB_ID
+
+select sum(SALARY),JOB_ID from employees group by JOB_ID
+
