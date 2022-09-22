@@ -1,0 +1,5 @@
+select * from employees 
+
+select count(MANAGER_ID),DEPARTMENT_ID from employees group by DEPARTMENT_ID
+
+select count(MANAGER_ID),DEPARTMENT_ID from employees group by DEPARTMENT_ID having count(MANAGER_ID) > 5
