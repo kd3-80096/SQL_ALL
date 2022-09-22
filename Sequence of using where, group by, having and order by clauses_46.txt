@@ -1,0 +1,3 @@
+## where>group by>having>order by
+select count(MANAGER_ID),DEPARTMENT_ID from employees where SALARY >1000  group by DEPARTMENT_ID having count(MANAGER_ID) > 5 order by count(MANAGER_ID)
+
