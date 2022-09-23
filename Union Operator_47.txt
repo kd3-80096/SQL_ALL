@@ -1,0 +1,70 @@
+
+create table empone(id int)
+
+insert into  empone values(1)
+insert into empone values(3)
+insert into empone values(5)
+select * from empone
+
+create table emptwo(id int)
+
+insert into  emptwo values(2)
+insert into emptwo values(3)
+insert into emptwo values(9)
+select * from emptwo
+
+select * from empone union select * from emptwo  ## applying the union operator
+
+
+create table empthree(id int, name1 varchar(10))
+
+insert into  empthree values(1,'Alice')
+insert into empthree values(2,'Ramesh')
+insert into empthree values(3,'Mahesh')
+select * from empthree
+
+create table empfour(id1 int, name2 varchar(10))
+
+insert into  empfour values(1,'Nona')
+insert into empfour values(2,'veena')
+insert into empfour values(3,'Mahesh')
+
+select * from empfour
+
+# Here it will eliminate the duplicate record into the two tables which is the (3,'Mahesh') rest all will be displayed
+select * from empthree union select * from empfour ## applying the union operator
+
+select id,name1 from empthree union select id1,name2 from empfour  ## same query as above in different way taking the column names in consideration
+
+
+## union on specific coumns only
+
+select id from empthree union select id1 from empfour # all the duplicates id from column 2 will be eliminated
+ 
+
+create table empfive(id1 int, name2 varchar(10),city varchar(10))
+
+insert into  empfive values(1,'Nona','mumbai')
+insert into empfive values(2,'veena','london')
+insert into empfive values(3,'Mahesh','dubai')
+
+select * from empfive
+
+## here union operator will not work on these two tables as the tables have different number of columns
+select * from empfour union select * from empfive
+
+## Here we have selected the similar columns for union so its working
+select id,name1 from empthree union select id1,name2 from empfive 
+
+## datatype if both the columns should be similar for effictive use of union
+select id from empthree union select name2 from empfive
+
+
+## Here the order of columns should be in same order in order for the union operator to work
+select id,name1 from empthree union select name2,id1 from empfive  
+
+
+
+
+
+
