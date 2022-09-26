@@ -1,0 +1,7 @@
+select id,id1 from empthree e, empfour o    ##empthree alias name is e and empfour alias name is o
+
+select o.id1, e.name1 from empthree e, empfour o    ## retriving the table columns with the table alias name
+
+
+select o.id1, e.name1, e.id, o.name2 from empthree e, empfour o where o.id1 = e.id      ## Here the records are retrived with the condition through the alias name of table
+
