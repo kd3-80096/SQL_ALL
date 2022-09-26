@@ -1,0 +1,7 @@
+select * from empthree
+
+select * from empfour
+
+select id from empthree union all select id1 from empfour  ## union all will also print the duplicate records
+
+select id,name1 from empthree union all select id1,name2 from empfour 
