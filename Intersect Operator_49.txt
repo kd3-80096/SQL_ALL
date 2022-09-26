@@ -1,0 +1,1 @@
+select id from empthree intersect select id1 from empfour
