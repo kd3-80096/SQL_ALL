@@ -1,0 +1,1 @@
+select * from Products where CategoryID in(SELECT CategoryID from Categories  where CategoryName like 'C%')
