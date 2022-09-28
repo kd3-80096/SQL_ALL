@@ -1,0 +1,10 @@
+select * from Customers where city in(select city from Customers where ContactName = 'Hari Kumar')
+
+
+select max(Price) from Products where Price < (select max(Price) from Products)
+
+
+select max(price) from Products where Price < (select max(Price) from Products where Price < (select max(Price) from Products))
+
+
+select ProductName from Products where Price = (select min(Price) from Products)
