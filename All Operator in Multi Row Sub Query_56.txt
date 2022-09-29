@@ -1,0 +1,3 @@
+select * from Products where ProductID < all(SELECT ProductID FROM OrderDetails where Quantity = 1);
+
+select * from Products where ProductID > all(SELECT ProductID FROM OrderDetails where Quantity = 1);
