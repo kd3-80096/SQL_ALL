@@ -1,0 +1,3 @@
+select buying,(select class from motorcycle where motorcycle.ID = bike.ID )as class from bike  ## class is given alias to column of subquery
+
+select class,(select safety from motorcycle where motorcycle.buying = bike.buying )as safety from bike  
