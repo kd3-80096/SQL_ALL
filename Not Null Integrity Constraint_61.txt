@@ -1,0 +1,12 @@
+## created table with the indexes column as not null constraint
+create table constraints(indexs int not null, worker_id int unique, worker_names varchar(20))
+
+
+insert into constraints values(1,101,'Subhash') ## inserting the records
+insert into constraints values(2,102,'Mohan')	## inserting the records
+
+
+
+## cannot add null in indexes as column is set to not null constraint
+
+insert into constraints(worker_id,worker_names) values(103,'Subhash') 
