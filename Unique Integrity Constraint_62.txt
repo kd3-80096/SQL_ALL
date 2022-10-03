@@ -1,0 +1,9 @@
+## Here the worker_id has Unique constrain so duplicate records will not be allowed
+create table constraints(indexs int not null, worker_id int unique, worker_names varchar(20))
+
+
+insert into constraints values(1,101,'Subhash') 	## Inserting into the table 
+insert into constraints values(2,102,'Mohan')	## Inserting into the table
+
+
+insert into constraints values(3,102,'Raju')  ## cannot add duplicate worker_id as column has unique constraint
