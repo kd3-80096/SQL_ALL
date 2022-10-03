@@ -7,3 +7,16 @@ insert into constraints values(2,102,'Mohan')	## Inserting into the table
 
 
 insert into constraints values(3,102,'Raju')  ## cannot add duplicate worker_id as column has unique constraint
+
+
+## unique constrain in two column named indexes and worker_id
+create table constraints1(indexs int, worker_id int , worker_names varchar(20),unique(indexs,worker_id))  ## unique constrain in two column
+
+
+insert into constraints1 values(1,101,'Subhash')
+insert into constraints1 values(2,102,'Mohan') 
+insert into constraints1 values(2,103,'Rohan') ## this will get inserted because in both the indexs,worker_id we need unique values
+
+
+select * from constraints1
+
