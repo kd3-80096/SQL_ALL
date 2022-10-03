@@ -1,0 +1,40 @@
+
+## primary key constrain in two column
+create table constraints2(indexs int, worker_id int primary key , worker_names varchar(20))  
+
+insert into constraints2 values(1,101,'Subhash')
+
+## we will not be able to insert this as worker_id is set to primary key
+insert into constraints2 values(2,101,'Mohan') 
+
+insert into constraints2(indexs,worker_names) values (2,"mohan")
+
+select * from constraints2
+
+
+## primary key constrain in two column
+create table constraints3(indexs int,worker_id int, worker_names varchar(20), primary key(indexs,worker_names))  
+
+insert into constraints3 values(1,101,'Mohan') 
+
+
+insert into constraints3 values(1,102,'Rohan')  ## it will insert the values as the indexs,worker_names both have primary key .
+
+insert into constraints3 values(2,102,"rohan")	 ## it will insert the values as the indexs,worker_names both have primary key .
+
+## This will not get inserted as worker_names cannot be null
+insert into constraints3(indexs,worker_id) values (2,102)
+
+## This will not get inserted as indexs cannot be null
+insert into constraints3(worker_id,worker_names) values (2,"monu") 
+
+
+
+
+
+select * from constraints3
+
+
+
+
+
