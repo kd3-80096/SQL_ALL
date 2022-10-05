@@ -1,0 +1,19 @@
+create table emp1(id int,name varchar(15), experiance int check(experiance > 5))
+
+insert into emp1 values(1,'Varun',2) ## cannot insert into experiance as check condition is >5
+insert into emp1 values(2,'Tarun',3)	## cannot insert into experiance as check condition is >5
+
+insert into emp1 values(3,'Karun',6)
+
+select * from emp1
+
+
+create table emp2(id int,location varchar(15) check(location in ('India','USA','UK')));
+
+insert into emp2 values(1,'india')
+insert into emp2 values(2,'UK')
+
+insert into emp2 values(1,'canada')  ## cannot insert into location as check condition is India,USA,UK
+
+
+ select * from emp2
