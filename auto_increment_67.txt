@@ -1,0 +1,51 @@
+
+create table employee1(id int primary key auto_increment, name varchar(15))
+
+
+insert into employee1 values(1,"dev")
+
+insert into employee1 values(2,"shiv")
+
+insert into employee1(name) values ("monu")  ## here auto_increment will automatically insert the next id even if we don't specify
+
+select * from employee1
+
+
+create table employee2(id int primary key auto_increment, name varchar(15))
+
+insert into employee2(name) values ("monu")  ## here auto_increment will automatically insert the next id even if we don't specify
+
+insert into employee2(name) values ("shiv")   ## here auto_increment will automatically insert the next id even if we don't specify
+
+
+select * from employee2
+
+
+create table employee3(id int primary key auto_increment, name varchar(15)) auto_increment=100  
+
+insert into employee3(name) values ("nona")  ## here the default value of the auto_increment will be inserted which is 100
+
+insert into employee3(name) values ("mina")  ## here the default value of the auto_increment will be inserted which is 100
+
+select * from employee3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
