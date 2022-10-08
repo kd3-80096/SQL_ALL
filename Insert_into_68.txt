@@ -1,0 +1,52 @@
+
+
+create table city(name varchar(20), country char(20))
+
+insert into city values('kabul','afgan')
+insert into city values('delhi','india')
+insert into city values('london','uk')
+insert into city values('seattle','usa')
+insert into city values('auckland','nz')
+
+select * from city
+
+
+create table new_city(name varchar(20), country char(20)) 
+
+
+
+## copy records from city to new_city
+
+insert into new_city select * from city  
+
+
+select * from new_city
+
+
+create table old_city(name varchar(20), country char(20),population int, id int) 
+
+## here we will insert records into only two columns name and country from city table
+
+insert into old_city(name,country) select name,country from city
+
+select * from old_city
+
+
+
+create table night_city(name varchar(20), country char(20),population int, id int) 
+
+## here we will insert records into only two columns name and country from city table with a where condition.
+
+
+insert into night_city(name,country) select name,country from city where country = 'afgan'
+
+select * from night_city
+
+
+
+
+
+
+
+
+
