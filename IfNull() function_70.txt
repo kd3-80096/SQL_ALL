@@ -1,0 +1,22 @@
+create table worker(id int, salary int)
+
+select * from worker
+
+insert into worker values(1,200000)
+insert into worker values(2,400000)
+insert into worker(id) values(3)
+
+select (salary+100000) from worker
+
+## we will use ifnull() to add the 100000 to the salary
+
+select (ifnull(salary,0)+100000) from worker  ## for salary we have taken 0 as base value.
+
+
+
+
+
+
+
+
+
