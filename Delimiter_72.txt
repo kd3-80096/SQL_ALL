@@ -1,0 +1,38 @@
+
+select * from bike; # by default the delimiter is the semi-colon
+
+
+Delimiter //
+select * from bike//
+
+Delimiter $$
+select * from bike$$
+
+
+Delimiter ##
+select * from bike##
+
+
+Delimiter **
+select * from bike**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
