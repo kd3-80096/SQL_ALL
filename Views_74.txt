@@ -1,0 +1,86 @@
+
+select * from emp
+
+insert into emp values(1,'varun',5)
+insert into emp values(3,'nona',10)
+insert into emp values(4,'deliya',15)
+
+## creating view table with only id and name columns
+
+create view empone_view
+as 
+select  id,name from emp
+
+
+select * from empone_view
+
+
+## creating the view table with where condition in it
+
+create view emponeview1
+as
+select * from emp where experiance>10
+
+
+select * from emponeview1
+
+
+## creating another table {This is real table and not a view}
+
+create table empss (id int,country varchar(20))
+
+insert into empss values (1,"usa")
+insert into empss values (2,"uk")
+insert into empss values (3,"india")
+
+select * from empss
+
+## now we will create a view taking columns from emp and empss table
+## complex_view example
+
+create view emponeview2
+as 
+select e.id,name,country from emp e,empss em where e.id = em.id
+
+
+select * from emponeview2
+
+
+## creating another view table 
+
+create view emp_view
+as
+select * from emp
+
+## now we will insert into original table which is the emp
+
+select * from emp
+insert into emp values(5,'dev',4)
+
+
+# the changes will be reflected into the view table as well 
+select * from emp_view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
