@@ -1,0 +1,45 @@
+
+## creating a new emp table for applying the indexing 
+create table empone1(id int,name varchar(15),experience int,country varchar(15));
+
+## to see the indexes from table
+show indexes from empone1
+
+insert into empone1 values(1,'Arun',12,'India');
+insert into empone1 values(2,'Varun',7,'USA');
+insert into empone1 values(3,'Tharun',9,'UK');
+
+select * from empone1
+
+## retriving the records from the country usa
+
+select * from empone1 where country ="USA"
+
+
+## creating the index
+
+create index land_index
+on empone1(country)
+
+show indexes from empone1
+
+## retrival time will be faster for indexes
+select * from empone1 where country ="USA"
+
+
+## index will be created automatically for the primary and unique keys no need to create explicitely
+1.	primary index will be automatically created
+
+create table emptwo2(id int primary key,name varchar(15),experience int,country varchar(15));
+
+show indexes from emptwo2
+
+1.	id index will be automatically created
+
+create table empthree3(id int unique,name varchar(15),experience int,country varchar(15));
+
+show indexes from empthree3
+
+
+## to drop indexes 
+drop index land_index on empone1
