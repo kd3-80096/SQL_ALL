@@ -1,0 +1,15 @@
+show columns from emp
+
+show indexes from emp
+
+use dev
+
+
+show privileges
+
+show grants for 'user1'
+
+show grants for 'user2'
+
+
+
