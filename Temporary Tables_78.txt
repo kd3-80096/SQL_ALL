@@ -1,0 +1,20 @@
+
+## creating the temporary table
+
+create temporary table temptable(id int,name varchar(15))
+
+## inserting values into the temptable.
+insert into temptable values(1,'dev')
+insert into temptable values(2,'mon')
+insert into temptable values(3,'shiv')
+insert into temptable values(4,'bab')
+
+select * from temptable
+
+
+
+
+
+
+
+
