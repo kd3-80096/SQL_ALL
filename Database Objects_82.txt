@@ -1,0 +1,26 @@
+
+
+## creating the Database Objects
+
+
+create table emp(id int, name varchar(15))
+
+
+create index indexs on emp(id)
+
+
+create view empview as select * from emp
+
+
+Delimiter //
+create procedure empdetails()
+Begin
+	select * from emp;
+    select id from emp;
+    select name from emp;
+End //
+
+
+
+
+
