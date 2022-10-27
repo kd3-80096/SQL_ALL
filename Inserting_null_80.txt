@@ -1,0 +1,29 @@
+
+use cardataset
+
+create table bikes(model_name varchar(20),price varchar(10))
+
+insert into bikes  values('honda_activa',90000)
+insert into bikes  values('honda_dio',80000)
+insert into bikes  values('tvs_jupiter',90000)
+
+
+select * from bikes
+
+## Directly inserting the null values into the table
+
+insert into bikes values(null,95000)
+
+## another way of adding the null values is by leaving the space blank
+
+insert into bikes (model_name) values('yamaha_ray')
+
+
+
+
+
+
+
+
+
+
