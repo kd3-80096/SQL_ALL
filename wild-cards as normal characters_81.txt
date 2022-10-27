@@ -1,0 +1,16 @@
+## _ and %
+
+select * from empones
+
+insert into empones values('dines_')
+
+select * from empones where name like '%\_'  ## here the backslash before _ will make _ a normal character and not wildcard
+
+select * from empones where name like '%$_' escape '$'  ## here we have the $ as escape character to convert the _ into normal character
+
+select * from empones where name like 'a%'
+
+
+
+
+
