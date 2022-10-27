@@ -5,3 +5,28 @@ select length('  Devesh ')
 select length(trim('  Devesh '))
 
 Select trim(ColumnName) from TableName;
+
+
+
+## trimming with special characters
+
+select trim('a' from 'arun')   
+
+select trim('a' from 'rana') ## here the last a will  be trimmed as it is at corner end
+
+select trim('a' from 'aruna')  ## here the left a will be trimmed as it will be discovered first 
+
+create table empones(name varchar(15))
+
+insert into empones values('arun')
+
+insert into empones values('varun')
+
+insert into empones values('nandan')
+
+select * from empones
+
+
+select trim('a' from name) from empones
+
+
